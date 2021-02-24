@@ -1,20 +1,21 @@
 const router = require("express").Router();
-const { workout } = require("../models");
 const db = require("../models");
 
 //get workouts
 router.get("/api/workouts", (req, res) => {
     db.workout.find({})
     .then(dbWorkout => {
+        dbWorkout.forEach(workout => {
         var total = 0;
         workout.exercises.forEach(e => {
             total += e.duration;
         });
         workout.totalDuration = total;
     });
-    res.json(dbWorkout);
-}) .catch(err => {
-    res.json(err);
+        res.json(dbWorkout);
+    }).catch(err => {
+        res.json(err);
+    });
 });
 
 //add exercise

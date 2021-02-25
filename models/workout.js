@@ -2,7 +2,6 @@ const mongoose = require("mongoose");
 
 const Schema = mongoose.Schema;
 
-// these schema collections are coming from the exercise html
 const WorkoutSchema = new Schema({
   day: {
     type: Date,

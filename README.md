@@ -16,7 +16,7 @@ For this assignment, you'll create a workout tracker. You have already been prov
   ## Installation
   First run `npm i` in order to install the dependencies. The application itself can be invoked with `node server.js` in the intergreated termeinal.
 
-  (currently not working) Here is a link to the deployed site on [heroku](https://floating-tundra-72320.herokuapp.com/).
+  Here is a link to the deployed site on [heroku](https://floating-tundra-72320.herokuapp.com/).
 
   ## Usage
   ![Gif demo](./public/assets/demo.gif)
